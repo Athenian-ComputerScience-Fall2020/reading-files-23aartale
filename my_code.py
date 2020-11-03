@@ -1,8 +1,9 @@
 # Collaborators (including web sites where you got help: (enter none if you didn't need help)
 #  
-sum_list = 0
 
-def avg_temp(sum_list):
+
+def avg_temp():
+    sum_list = 0
     with open('temps.txt') as file_object:
         line_list = file_object.readlines()
         list_length = len(line_list) - 1
@@ -15,5 +16,5 @@ def avg_temp(sum_list):
     return round_answer
 
 if __name__ == '__main__':
-    print(avg_temp(sum_list))
+    print(avg_temp())
 
